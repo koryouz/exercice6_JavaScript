@@ -1,6 +1,11 @@
-function toggle() {
-  var nb1 = document.getElementById("firstNumber").value;
-  var nb2 = document.getElementById("secondNumber").value;
-  var result = nb1%nb2;
-  alert(result);
+function toggle(){
+  var firstNumber = document.getElementById("firstNumber").value;
+  var secondNumber = document.getElementById("secondNumber").value;
+  if (!isNaN(firstNumber) && !isNaN(secondNumber)){
+    if (secondNumber != 0){
+      alert(firstNumber%secondNumber);
+    }else{
+      alert('fail');
+    }
+  }
 }
