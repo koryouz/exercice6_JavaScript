@@ -5,7 +5,9 @@ function toggle(){
     if (secondNumber != 0){
       alert(firstNumber%secondNumber);
     }else{
-      alert('fail');
+      alert('second number != 0');
     }
+  }else{
+    alert('not a number');
   }
 }
